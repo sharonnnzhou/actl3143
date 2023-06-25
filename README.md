@@ -20,41 +20,48 @@ This early draft will conduct exploratory data analysis to gain insights into th
 The dataset used is from the University of California Irvine (UCI) data repository and contains data on 270 patients with 13 independent predictive variables. Information on the attributes is contained below: 
 
 ``` age ```: the patient's age in years
-
-1.age: The person's age in years
-
-2.sex: The person's sex (1 = male, 0 = female)
-
-3.cp: The chest pain experienced (Value 1: typical angina, Value 2: atypical angina, Value 3: non-anginal pain, Value 4: asymptomatic)
-
-4.trestbps: The person's resting blood pressure (mm Hg on admission to the hospital)
-
-5.chol: The person's cholesterol measurement in mg/dl
-
-6.fbs: The person's fasting blood sugar (> 120 mg/dl, 1 = true; 0 = false)
-
-7.restecg: Resting electrocardiographic measurement (0 = normal, 1 = having ST-T wave abnormality, 2 = showing probable or definite left ventricular hypertrophy by Estes' criteria)
-
-8.thalach: The person's maximum heart rate achieved
-
-9.exang: Exercise induced angina (1 = yes; 0 = no)
-
-10.oldpeak: ST depression induced by exercise relative to rest ('ST' relates to positions on the ECG plot. See more here)
-
-11.slope: the slope of the peak exercise ST segment (Value 1: upsloping, Value 2: flat, Value 3: downsloping)
-
-12.ca: The number of major vessels (0-3)
-
-13.thal: A blood disorder called thalassemia (3 = normal; 6 = fixed defect; 7 = reversable defect)
-
-14.target: Heart disease (0 = no, 1 = yes)
-
+``` sex ```: the patient's sex (1 = male, 0 = female)
+``` cp ```: the chest pain experienced (1 = typical angina, 2 = atypical angina, 3 = non-anginal pain, 4 = asymptomatic)
+``` trestbps ```: the patient's resting blood pressure in mm/Hg upon admission to the hospital
+``` chol ```: the patient's cholesterol measurement in mg/dl
+``` fbs ```: the patient's fasting blood sugar (> 120 mg/dl, 1 = true; 0 = false)
+``` restecg ```: the patient's resting electrocardiographic measurement (0 = normal, 1 = having ST-T wave abnormality, 2 = left ventricular hypertrophy)
+``` thalach ```: the patient's maximum heart rate achieved
+``` exang ```: exercise-induced angina
+``` oldpeak ```: the patient's ST depression induced by exercise relative to rest
+``` slope ```: the slope of the peak exercise ST segment (1 = upsloping, 2 = flat, 3 = downsloping)
+``` ca ```: the number of major vessels (0-3) coloured by flouroscopy 
+``` thal ```: displays the thalassemia (3 = normal, 6 = fixed defect, 7 = reversible defect)
+``` num ```: the patient's diagnosis of heart disease (0 = absence; 1-4 = presence)
 	
-## Data Preparation
-Project is created with:
-* Lorem version: 12.3
-* Ipsum version: 2.33
-* Ament library version: 999
+## 2. Data Preparation
+
+### 2.1 Loading all packages 
+
+```
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import plotly.express as px
+import seaborn as sns
+import random
+
+from sklearn import set_config
+from sklearn.compose import make_column_transformer
+from sklearn.preprocessing import OneHotEncoder, StandardScaler, OrdinalEncoder
+from sklearn.model_selection import train_test_split
+
+from tensorflow.keras.models import Sequential, Model
+from tensorflow.keras.layers import Dense, Embedding, Reshape, Concatenate, Input
+from tensorflow.keras.callbacks import EarlyStopping
+from tensorflow.keras.utils import plot_model
+
+set_config(transform_output="pandas")
+```
+
+### 2.2 Importing data 
+
+
 	
 ## Exploratory Data Analysis
 To run this project, install it locally using npm:
