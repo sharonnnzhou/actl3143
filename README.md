@@ -19,20 +19,20 @@ This early draft will conduct exploratory data analysis to gain insights into th
 
 The dataset used is from the University of California Irvine (UCI) data repository and contains data on 270 patients with 13 independent predictive variables. Information on the attributes is contained below: 
 
-``` age ```: the patient's age in years
-``` sex ```: the patient's sex (1 = male, 0 = female)
-``` cp ```: the chest pain experienced (1 = typical angina, 2 = atypical angina, 3 = non-anginal pain, 4 = asymptomatic)
-``` trestbps ```: the patient's resting blood pressure in mm/Hg upon admission to the hospital
-``` chol ```: the patient's cholesterol measurement in mg/dl
-``` fbs ```: the patient's fasting blood sugar (> 120 mg/dl, 1 = true; 0 = false)
-``` restecg ```: the patient's resting electrocardiographic measurement (0 = normal, 1 = having ST-T wave abnormality, 2 = left ventricular hypertrophy)
-``` thalach ```: the patient's maximum heart rate achieved
-``` exang ```: exercise-induced angina
-``` oldpeak ```: the patient's ST depression induced by exercise relative to rest
-``` slope ```: the slope of the peak exercise ST segment (1 = upsloping, 2 = flat, 3 = downsloping)
-``` ca ```: the number of major vessels (0-3) coloured by flouroscopy 
-``` thal ```: displays the thalassemia (3 = normal, 6 = fixed defect, 7 = reversible defect)
-``` num ```: the patient's diagnosis of heart disease (0 = absence; 1-4 = presence)
+* ``` age ```: the patient's age in years
+* ``` sex ```: the patient's sex (1 = male, 0 = female)
+* ``` cp ```: the chest pain experienced (1 = typical angina, 2 = atypical angina, 3 = non-anginal pain, 4 = asymptomatic)
+* ``` trestbps ```: the patient's resting blood pressure in mm/Hg upon admission to the hospital
+* ``` chol ```: the patient's cholesterol measurement in mg/dl
+* ``` fbs ```: the patient's fasting blood sugar (> 120 mg/dl, 1 = true; 0 = false)
+* ``` restecg ```: the patient's resting electrocardiographic measurement (0 = normal, 1 = having ST-T wave abnormality, 2 = left ventricular hypertrophy)
+* ``` thalach ```: the patient's maximum heart rate achieved
+* ``` exang ```: exercise-induced angina
+* ``` oldpeak ```: the patient's ST depression induced by exercise relative to rest
+* ``` slope ```: the slope of the peak exercise ST segment (1 = upsloping, 2 = flat, 3 = downsloping)
+* ``` ca ```: the number of major vessels (0-3) coloured by flouroscopy
+* ``` thal ```: displays the thalassemia (3 = normal, 6 = fixed defect, 7 = reversible defect)
+* ``` num ```: the patient's diagnosis of heart disease (0 = absence; 1-4 = presence)
 	
 ## 2. Data Preparation
 
